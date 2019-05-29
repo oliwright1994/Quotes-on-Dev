@@ -1,0 +1,44 @@
+.site-info {
+  margin: 0;
+  p {
+    margin: 0;
+  }
+}
+
+#site-navigation {
+  float: none;
+  margin-top: $base__space-unit;
+}
+
+.nav-menu {
+  li {
+    margin-right: 1rem;
+    border-right: solid 1px white;
+    line-height: 1;
+    padding-right: 1rem;
+  }
+
+  :last-child {
+    border-right: none;
+  }
+}
+
+.menu-toggle {
+  border: $border__solid-green;
+  border-radius: $border__radius;
+  background: none;
+  color: $color__brand-green;
+  text-shadow: none;
+  box-shadow: none;
+  margin-bottom: $base__space-unit;
+}
+
+#colophon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main-navigation.toggled button {
+  border-color: white;
+}

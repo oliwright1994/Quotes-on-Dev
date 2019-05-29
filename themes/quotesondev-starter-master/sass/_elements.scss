@@ -16,6 +16,11 @@ html {
 
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  max-width: 1080px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: $base__space-unit;
+  min-height: 100vh;
 }
 
 blockquote,
