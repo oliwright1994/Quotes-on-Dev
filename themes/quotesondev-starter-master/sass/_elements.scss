@@ -5,6 +5,7 @@
 html {
   box-sizing: border-box;
   font-size: 1rem;
+  background: #222;
 }
 
 *,
@@ -46,7 +47,7 @@ ol {
 }
 
 ul {
-  list-style: disc;
+  list-style: none;
 }
 
 ol {
@@ -75,4 +76,8 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+
+.page-numbers {
+  font-size: 1.25rem;
 }

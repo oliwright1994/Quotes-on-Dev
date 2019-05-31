@@ -1,0 +1,14 @@
+li {
+  list-style-type: none;
+}
+
+.custom-archive-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  > a,
+  > li {
+    margin-right: 1.2rem;
+  }
+}

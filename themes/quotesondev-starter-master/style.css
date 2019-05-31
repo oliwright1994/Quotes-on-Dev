@@ -327,7 +327,8 @@ big {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background: #222; }
 
 *,
 *:before,
@@ -364,7 +365,7 @@ ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -389,6 +390,9 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+.page-numbers {
+  font-size: 1.25rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -467,7 +471,39 @@ input.search-field {
 .search-submit {
   background: none;
   color: #00cc00;
-  border: none; }
+  border: none;
+  text-shadow: none; }
+
+#submit-quote-form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: none;
+  margin: 0;
+  padding: 0; }
+  #submit-quote-form fieldset input,
+  #submit-quote-form fieldset textarea {
+    border: 2px solid #00cc00;
+    border-radius: 3px;
+    background: none;
+    text-shadow: none; }
+  #submit-quote-form fieldset input {
+    max-width: 200px; }
+  #submit-quote-form fieldset .submit-button {
+    color: #00cc00;
+    font-weight: 700;
+    margin: 1.5rem 0; }
+  #submit-quote-form fieldset label {
+    margin: 1.5rem 0 0.75rem 0; }
+  #submit-quote-form fieldset :first-child {
+    margin-top: 0; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -636,6 +672,9 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.entry-header h1 {
+  font-size: 2rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -671,10 +710,10 @@ object {
   margin-top: 1.5rem; }
 
 .nav-menu li {
-  margin-right: 1rem;
+  margin-right: 0.75rem;
   border-right: solid 1px white;
-  line-height: 1;
-  padding-right: 1rem; }
+  line-height: 1.5;
+  padding-right: 0.75rem; }
 
 .nav-menu :last-child {
   border-right: none; }
@@ -710,3 +749,22 @@ object {
 
 p {
   font-size: 1.25em; }
+
+.search-results-title {
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 1.5rem; }
+
+li {
+  list-style-type: none; }
+
+.custom-archive-list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .custom-archive-list > a,
+  .custom-archive-list > li {
+    margin-right: 1.2rem; }

@@ -87,4 +87,37 @@ input.search-field {
   background: none;
   color: $color__brand-green;
   border: none;
+  text-shadow: none;
+}
+
+#submit-quote-form {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    margin: 0;
+    padding: 0;
+    input,
+    textarea {
+      border: $border__solid-green;
+      border-radius: $border__radius;
+      background: none;
+      text-shadow: none;
+    }
+    input {
+      max-width: 200px;
+    }
+    .submit-button {
+      color: $color__brand-green;
+      font-weight: 700;
+      margin: $base__space-unit 0;
+    }
+    label {
+      margin: $base__space-unit 0 $base__space-unit/2 0;
+    }
+    :first-child {
+      margin-top: 0;
+    }
+  }
 }
