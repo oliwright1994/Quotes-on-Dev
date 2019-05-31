@@ -104,6 +104,11 @@ input.search-field {
       border-radius: $border__radius;
       background: none;
       text-shadow: none;
+      color: white;
+      max-width: 500px;
+      &:focus {
+        color: white;
+      }
     }
     input {
       max-width: 200px;
@@ -119,5 +124,14 @@ input.search-field {
     :first-child {
       margin-top: 0;
     }
+  }
+}
+
+#submit-another-quote-button {
+  border: $border__solid-green;
+  border-radius: $border__radius;
+  padding: 0.7rem;
+  &:hover {
+    border-color: white;
   }
 }

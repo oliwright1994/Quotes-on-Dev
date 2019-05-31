@@ -36,6 +36,8 @@ get_header(); ?>
 				</fieldset>
 			</form>
 
+			<a href="<?php echo get_permalink() ?>" id="submit-another-quote-button" style="display: none"> Submit another quote.</a>
+
 		<?php endwhile;
 	?>
 

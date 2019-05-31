@@ -71,14 +71,21 @@ function qod_scripts()
 	// Api ajax script
 	wp_enqueue_script('qod_api', get_template_directory_uri() . '/build/js/api.min.js', array('jquery'), false, true);
 
-	wp_localize_script('qod_api', 'api_vars', array(
-		'rest_url' => esc_url_raw(rest_url()),
-		'wpapi_nonce' => wp_create_nonce('wp_rest'),
-		'post_id' => get_the_ID(),
-		'nonce' => wp_create_nonce('wp_rest'),
-		'success' => 'Thanks, your submission was received!',
-		'failure' => 'Your submission could not be processed.',
-	));
+	wp_localize_script(
+		'qod_api',
+		'api_vars',
+		array(
+			'rest_url' => esc_url_raw(rest_url()),
+			'wpapi_nonce' => wp_create_nonce('wp_rest'),
+			'post_id' => get_the_ID(),
+			'nonce' => wp_create_nonce('wp_rest'),
+			'success' => 'Thanks, your submission was received!',
+			'failure' => 'Your submission could not be processed. Please try again.',
+			'user_logged_in' => is_user_logged_in(),
+			'site_url' => site_url(),
+			'site_login_url' => wp_login_url(),
+		)
+	);
 }
 add_action('wp_enqueue_scripts', 'qod_scripts');
 

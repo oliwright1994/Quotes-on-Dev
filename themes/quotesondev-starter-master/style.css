@@ -394,6 +394,9 @@ table {
 .page-numbers {
   font-size: 1.25rem; }
 
+main {
+  margin-bottom: 3rem; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -493,7 +496,12 @@ input.search-field {
     border: 2px solid #00cc00;
     border-radius: 3px;
     background: none;
-    text-shadow: none; }
+    text-shadow: none;
+    color: white;
+    max-width: 500px; }
+    #submit-quote-form fieldset input:focus,
+    #submit-quote-form fieldset textarea:focus {
+      color: white; }
   #submit-quote-form fieldset input {
     max-width: 200px; }
   #submit-quote-form fieldset .submit-button {
@@ -504,6 +512,13 @@ input.search-field {
     margin: 1.5rem 0 0.75rem 0; }
   #submit-quote-form fieldset :first-child {
     margin-top: 0; }
+
+#submit-another-quote-button {
+  border: 2px solid #00cc00;
+  border-radius: 3px;
+  padding: 0.7rem; }
+  #submit-another-quote-button:hover {
+    border-color: white; }
 
 /*--------------------------------------------------------------
 # Navigation
