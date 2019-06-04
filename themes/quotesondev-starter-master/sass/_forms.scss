@@ -18,6 +18,7 @@ input[type='submit'] {
   line-height: 1;
   padding: 0.6rem 1rem 0.4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  margin: $base__space-unit * 2 0;
 
   &:hover {
     border-color: #ccc #bbb #aaa;

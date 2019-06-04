@@ -89,6 +89,21 @@ function qod_scripts()
 }
 add_action('wp_enqueue_scripts', 'qod_scripts');
 
+// Register custon end point with route /any to show random single post on GET request
+function get_random()
+{
+	return get_posts(array('orderby' => 'rand', 'posts_per_page' => 1));
+}
+
+add_action(
+	'rest_api_init',
+	function () {
+		register_rest_route('wp/v2', '/any', array(
+			'methods'   =>  'GET',
+			'callback'  =>  'get_random',
+		));
+	}
+);
 
 /**
  * Custom functions that act independently of the theme templates.

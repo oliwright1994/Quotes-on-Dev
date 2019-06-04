@@ -413,7 +413,8 @@ input[type='submit'] {
   font-size: 1.25rem;
   line-height: 1;
   padding: 0.6rem 1rem 0.4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  margin: 3rem 0; }
   button:hover,
   input[type='button']:hover,
   input[type='reset']:hover,
@@ -783,3 +784,15 @@ li {
   .custom-archive-list > a,
   .custom-archive-list > li {
     margin-right: 1.2rem; }
+
+#show-another-quote-button {
+  margin: 3rem 0;
+  border: 2px solid #00cc00;
+  border-radius: 3px;
+  background: none;
+  color: #00cc00;
+  text-shadow: none;
+  padding: 0.75rem 1.5rem; }
+  #show-another-quote-button:hover {
+    border-color: white;
+    color: white; }

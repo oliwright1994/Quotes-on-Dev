@@ -1,0 +1,13 @@
+#show-another-quote-button {
+  margin: $base__space-unit * 2 0;
+  border: $border__solid-green;
+  border-radius: $border__radius;
+  background: none;
+  color: $color__brand-green;
+  text-shadow: none;
+  padding: $base__space-unit/2 $base__space-unit;
+  &:hover {
+    border-color: white;
+    color: white;
+  }
+}
