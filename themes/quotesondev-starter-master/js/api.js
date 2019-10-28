@@ -81,8 +81,9 @@ function clearRandomQuote() {
 jQuery(document).ready(function() {
   if (jQuery('main').is('#random-quote-homepage')) {
     displayRandomQuote();
+  } else {
+    return;
   }
-
   jQuery('#show-another-quote-button').click(function() {
     displayRandomQuote();
   });
@@ -105,6 +106,7 @@ jQuery(document).ready(function() {
           },
           error: function() {
             console.log('Post not submitted');
+            k;
           }
         })
         .done(function() {

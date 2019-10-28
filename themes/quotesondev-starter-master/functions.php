@@ -97,12 +97,10 @@ function get_random()
 
 add_action(
 	'rest_api_init',
-	function () {
-		register_rest_route('wp/v2', '/any', array(
-			'methods'   =>  'GET',
-			'callback'  =>  'get_random',
-		));
-	}
+	register_rest_route('wp/v2', '/any', array(
+		'methods'   =>  'GET',
+		'callback'  =>  'get_random',
+	))
 );
 
 /**

@@ -26,7 +26,7 @@
 			<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/qod-logo.svg' ?>" /></a></h1>
 			</div><!-- .site-branding -->
-
+		<?php get_template_part( 'header', 'search_form' ); ?>
 
 		</header><!-- #masthead -->
 
